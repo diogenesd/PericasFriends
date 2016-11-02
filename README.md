@@ -42,7 +42,7 @@ requisição TCP <porta liberada do servidor para conexão TCP>:
     Exemplo.:“3825:Oi!” 
 
 #3. Envio de mensagens: 
-enviar ao servidor uma mensagem destinada a um usuário, ou a todos, através de uma mensagem
+Enviar ao servidor uma mensagem destinada a um usuário, ou a todos, através de uma mensagem
 UDP <porta liberada do servidor para conexão UDP>:
   Formatação da mensagem para troca:
     Requisição: “SEND MESSAGE <userid1>:<passwd1>:<userid2>:<msg>” 
