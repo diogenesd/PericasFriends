@@ -1,3 +1,5 @@
+[![Apache 2.0 License](https://img.shields.io/badge/license-apache%202.0-green.svg) ](https://github.com/wmixvideo/nfe/blob/master/LICENSE)
+
 # PericasFriends
 #Software Cliente de Troca de Mensagens
 
@@ -38,8 +40,8 @@ requisição TCP ```<porta liberada do servidor para conexão TCP>```<br/>
     **Resposta:**``` “<userid>:<msg>”```<br/>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<userid>: número que identifica o remetente (0 significa mensagem do servidor)```<br/>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<msg>: mensagem recebida```<br/>
-    **Exemplo.:**“3825:Oi!” <br/>
-    **Obs.:** Não houver mensagem é enviado “:”<br/>
+    **Exemplo.: “3825:Oi!” **<br/>
+    **Obs.: Não houver mensagem é enviado “:”**<br/>
     
     
 ####3. Envio de mensagens: 
