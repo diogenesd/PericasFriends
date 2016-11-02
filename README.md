@@ -13,7 +13,7 @@ mensagens na forma de strings ASCII, terminadas pelo fim de linha padrão IETF.
 
 ####1. Lista de usuários e keepalive: 
 Obter do servidor, estabelecendo uma conexão a cada 6 segundos, a lista de usuários<br/>
-conectados através da seguinte requisição TCP ```<porta liberada do servidor para conexão TCP>:``` <br/>
+conectados através da seguinte requisição TCP ```<porta liberada do servidor para conexão TCP>``` <br/>
   Formatação da mensagem para troca:<br/>
       **Requisição:** “GET USERS ```<userid>:<passwd>” ```<br/>
       &nbsp;&nbsp;&nbsp;Onde ler-se,<br/>
@@ -24,23 +24,24 @@ conectados através da seguinte requisição TCP ```<porta liberada do servidor 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<userid>: número que identifica o usuário```<br/>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<username>: nome do usuário```<br/>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<wins>: <Ainda não implementado essa funcionalidade no servidor>```<br/>
-     **Exemplo.:**```“2756:João da Silva:4:1235:José da Silva:0:1243:Manuel da Silva:2:”```<br/>
+     **Exemplo.:**“2756:João da Silva:4:1235:José da Silva:0:1243:Manuel da Silva:2:”<br/>
 
 ####2. Requisição de mensagens: 
 Obter do servidor uma mensagem (a mais antiga) destinada ao usuário através da seguinte<br/>
-requisição TCP <porta liberada do servidor para conexão TCP>:<br/>
+requisição TCP ```<porta liberada do servidor para conexão TCP>```<br/>
  Formatação da mensagem para troca:<br/>
-    Requisição: “GET MESSAGE <userid>:<passwd>”<br/>
-    Onde ler-se,<br/>
-      <userid>: número que identifica o usuário cliente<br/>
-      <passwd>: senha do usuário cliente <br/>
-    Exemplo.: “GET MESSAGE 4123: rsybt” <br/>
-    Resposta: “<userid>:<msg>”<br/>
-      <userid>: número que identifica o remetente (0 significa mensagem do servidor)<br/>
-      <msg>: mensagem recebida<br/>
-      Obs.: se não houver mensagem é enviado “:”<br/>
-    Exemplo.:“3825:Oi!” <br/>
-
+    **Requisição:** “GET MESSAGE ```<userid>:<passwd>”```<br/>
+    &nbsp;&nbsp;&nbsp;Onde ler-se,<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<userid>: número que identifica o usuário cliente```<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<passwd>: senha do usuário cliente``` <br/>
+    **Exemplo.:** ```“GET MESSAGE 4123: rsybt” ```<br/>
+    **Resposta:**``` “<userid>:<msg>”```<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<userid>: número que identifica o remetente (0 significa mensagem do servidor)```<br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<msg>: mensagem recebida```<br/>
+    **Exemplo.:**“3825:Oi!” <br/>
+    **Obs.:** Não houver mensagem é enviado “:”<br/>
+    
+    
 ####3. Envio de mensagens: 
 Enviar ao servidor uma mensagem destinada a um usuário, ou a todos, através de uma mensagem<br/>
 UDP <porta liberada do servidor para conexão UDP>:<br/>
