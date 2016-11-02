@@ -15,13 +15,11 @@ mensagens na forma de strings ASCII, terminadas pelo fim de linha padrão IETF.
 Obter do servidor, estabelecendo uma conexão a cada 6 segundos, a lista de usuários<br/>
 conectados através da seguinte requisição TCP ```<porta liberada do servidor para conexão TCP>:``` <br/>
   Formatação da mensagem para troca:<br/>
-      Requisição: “GET USERS ```<userid>:<passwd>” ```<br/>
-      Onde ler-se,<br/>
-      
-```xml
-        <userid>: número que identifica o usuário cliente<br/>
-        <passwd>: senha do usuário cliente<br/>
-```   
+      &nbsp;Requisição: “GET USERS ```<userid>:<passwd>” ```<br/>
+      &nbsp;Onde ler-se,<br/>
+            ``` <userid>: número que identifica o usuário cliente<br/>
+                <passwd>: senha do usuário cliente<br/>
+            ```   
      Resposta: “<userid>:<username>:<wins>:”<br/>
       Onde ler-se,<br/>
 ```xml
