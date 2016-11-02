@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Este cliente
-        mCliente = new Cliente("5744", "gpmwe");
+        mCliente = new Cliente("login", "senha");       // colocar seus dados de acesso ao servidor
 
         mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
 
