@@ -17,13 +17,13 @@ conectados através da seguinte requisição TCP ```<porta liberada do servidor 
   Formatação da mensagem para troca:<br/>
       **Requisição:** “GET USERS ```<userid>:<passwd>” ```<br/>
       &nbsp;&nbsp;&nbsp;Onde ler-se,<br/>
-                        ```<userid>: número que identifica o usuário cliente```<br/>
-                        ```<passwd>: senha do usuário cliente```<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<userid>: número que identifica o usuário cliente```<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<passwd>: senha do usuário cliente```<br/>
       **Resposta**: ```“<userid>:<username>:<wins>:”```<br/>
       &nbsp;&nbsp;&nbsp;Onde ler-se,<br/>
-                        ```<userid>: número que identifica o usuário```<br/>
-                        ```<username>: nome do usuário```<br/>
-                        ```<wins>: <Ainda não implementado essa funcionalidade no servidor>```<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<userid>: número que identifica o usuário```<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<username>: nome do usuário```<br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```<wins>: <Ainda não implementado essa funcionalidade no servidor>```<br/>
      **Exemplo.:**```“2756:João da Silva:4:1235:José da Silva:0:1243:Manuel da Silva:2:”```<br/>
 
 ####2. Requisição de mensagens: 
