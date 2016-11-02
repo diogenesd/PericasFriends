@@ -33,9 +33,9 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
-    public static final String ENDPOINT = "larc.inf.furb.br";
-    private static int PORT_REQUEST_MESSAGE = 1012;
-    private static int PORT_SEND_MESSAGE = 1011;
+    public static final String ENDPOINT = "seu.servidor.br"; // colocar endereço do ENDPOINT do servidor
+    private static int PORT_REQUEST_MESSAGE = 1012;          // colocar a porta configurada do servidor para TCP
+    private static int PORT_SEND_MESSAGE = 1011;             // colocar a porta configurada do servidor para UDP
     private static final String SEND_MESSAGE = "SEND MESSAGE ";
     private static final String GET_USERS = "GET USERS ";
     private static final String GET_MESSAGE = "GET MESSAGE ";
