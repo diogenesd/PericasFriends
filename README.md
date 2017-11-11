@@ -3,17 +3,17 @@
 # PericasFriends
 #Software Cliente de Troca de Mensagens
 
-##Objetivo
+## Objetivo
 Familiarizar-se com o uso de sockets TCP e UDP no desenvolvimento de softwares de rede através da implementação de um cliente de
 software de Troca de Mensagens, utilizando a plataforma android
 
-##Requisitos do sistema
+## Requisitos do sistema
 O cliente de Troca de Mensagens deve se comunicar com o servidor <seu.servidor.com> de
 mensagens na forma de strings ASCII, terminadas pelo fim de linha padrão IETF.
 
-###Este projeto cliente de Troca de Mensagens já está implementando as seguintes funcionalidades: 
+### Este projeto cliente de Troca de Mensagens já está implementando as seguintes funcionalidades: 
 
-####1. Lista de usuários e keepalive: 
+#### 1. Lista de usuários e keepalive: 
 Obter do servidor, estabelecendo uma conexão a cada 6 segundos, a lista de usuários<br/>
 conectados através da seguinte requisição TCP ```<porta liberada do servidor para conexão TCP>``` <br/>
   Formatação da mensagem para troca:<br/>
@@ -30,7 +30,7 @@ conectados através da seguinte requisição TCP ```<porta liberada do servidor 
       <br/>
      **Exemplo.: “2756:João da Silva:4:1235:José da Silva:0:1243:Manuel da Silva:2:”**<br/>
 
-####2. Requisição de mensagens: 
+#### 2. Requisição de mensagens: 
 Obter do servidor uma mensagem (a mais antiga) destinada ao usuário através da seguinte<br/>
 requisição TCP ```<porta liberada do servidor para conexão TCP>```<br/>
  Formatação da mensagem para troca:<br/>
@@ -49,7 +49,7 @@ requisição TCP ```<porta liberada do servidor para conexão TCP>```<br/>
     **Obs.:**Não houver mensagem é enviado “:”<br/>
     
     
-####3. Envio de mensagens: 
+#### 3. Envio de mensagens: 
 Enviar ao servidor uma mensagem destinada a um usuário, ou a todos, através de uma mensagem<br/>
 UDP ```<porta liberada do servidor para conexão UDP>```<br/>
   Formatação da mensagem para troca:<br/>
